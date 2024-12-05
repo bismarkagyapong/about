@@ -74,37 +74,71 @@
       background-color: black;
       color: white;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
-    
-    h1 {
-      text-align: center;
-      margin: 35px 0 20px 0 !important;
-      color: white;
-    }
-    
+
     .container {
       max-width: 600px;
-      margin: 0 auto;
+      width: 90%;
       padding: 20px;
       border: 1px solid #444;
       border-radius: 8px;
       background-color: #222;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
-    
+
+    h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: white;
+      font-size: 1.8em;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .col {
+      flex: 1;
+    }
+
     .form-control {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       font-size: 16px;
       border: 1px solid #555;
       border-radius: 5px;
       background-color: #333;
       color: white;
+      box-sizing: border-box;
     }
-    
+
+    .form-control:focus {
+      outline: none;
+      border-color: #0078D4;
+      box-shadow: 0 0 8px rgba(0, 120, 212, 0.5);
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
     .btn {
-      display: inline-block;
-      width: 48%;
-      padding: 10px;
+      flex: 1;
+      padding: 12px;
       font-size: 18px;
       background-color: #555;
       color: white;
@@ -112,31 +146,29 @@
       border-radius: 5px;
       cursor: pointer;
       text-align: center;
+      transition: background-color 0.3s ease;
     }
 
     .btn:hover {
       background-color: #777;
     }
 
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    .button-group {
-      display: flex;
-      justify-content: space-between;
+    .btn:focus {
+      outline: none;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <h3>Fill in the forms</h3>
-  <form action="https://formsubmit.co/agyapongb01@gmail.com" method="POST">
+  <h3>Fill in the Forms</h3>
+  <form action="https://formsubmit.co/3e7498d2d6ada461e8e984a45776c079" method="POST">
     <!-- FormSubmit Configuration -->
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://markmixstudios.blogspot.com/p/thanks.html"> <!-- Redirect to thank you page -->
 
+    <!-- Full Name and Email -->
     <div class="form-group">
       <div class="form-row">
         <div class="col">
@@ -147,9 +179,13 @@
         </div>
       </div>
     </div>
+
+    <!-- Message -->
     <div class="form-group">
-      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="6" required></textarea>
     </div>
+
+    <!-- Buttons -->
     <div class="button-group">
       <button type="submit" class="btn">Submit</button>
       <button type="reset" class="btn">Reset</button>
@@ -159,8 +195,7 @@
 
 </body>
 </html>
-
-								<ul class="icons">
+									<ul class="icons">
 									<li><a href="https://x.com/BismarkInspires" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://facebook.com/markmixstudios" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.instagram.com/markmix.studios" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
